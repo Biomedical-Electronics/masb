@@ -7,12 +7,15 @@ Este repositorio lo utilizamos para *hostear* la [**página web**](https://biome
 Para incorporar tu trabajo a la página web, realiza los siguientes pasos:
 
 1. Haz un *fork* del repositorio.
+
 ![fork-repo](assets/imgs/fork-repo.gif)
 
 2. Clona el repositorio recién incorporado en tu perfil en tu ordenador.
+
 ![clone-repo](assets/imgs/clone-repo.gif)
 
 3. Para crear tu post, duplica el archivo `/_posts/template-student.md` en el mismo directorio y renombralo a `YYYY-MM-DD-NOMBRES.md`; donde `YYYY-MM-DD` corresponde al año, mes y día de la fecha de creación del post, y `NOMBRES` a los nombres de los participantes del trabajo separados por guiones.
+
 ![cp-file](assets/imgs/cp-file.gif)
 
 4. Utiliza tu editor favorito para modificar el archivo recién creado a conveniencia utilizando [Markdown](https://guides.github.com/features/mastering-markdown/) (añadir texto, imágenes, tablas, gráficos, etc.). Mi editor recomendado es [Visual Studio Code](https://code.visualstudio.com/). En el siguiente [enlace](https://guides.github.com/features/mastering-markdown/) encontrarás información sobre cómo aplicar los estilos más básicos. No te olvides de **editar** (que **no añadir**) los campos de [*front matter*](https://jekyllrb.com/docs/front-matter/) adequadamente:
@@ -36,4 +39,5 @@ Para incorporar tu trabajo a la página web, realiza los siguientes pasos:
     El resto de campos del *front matter* no deben de modificarse.
 
 5. Una vez finalizado el post, este se sube a GitHub mediante un *push* para, finalmente, incorporar el post a la página web mediante un **Pull Request (PR)** al repositorio de origen del *fork*. Al realizar un PR, se lanza un **test automático**. El test chequea que no haya ningún error que comprometa el correcto funcionamiento de la página web (errores en el *markdown*, modificaciones accidentales de otros archivos o enlaces erróneos, entre otros). **Este test debe de ser superado para poderse incorporar el post a la página web**. El resultado del test **aparece en la página del PR**. El author debe de realizar los cambios pertinentes hasta lograr superar el test. Una vez superado, **el administrador de la página web revisará los archivos modificados e incorporará el contenido si está todo correcto**. Si se tuviera que realizar una modificación, el administrador lo indicará directamente en el PR. Una vez aplicados los cambios necesarios, el administrador incorporará el contenido a la página web.
+
 ![pull-request-repo](assets/imgs/pull-request-repo.gif)
