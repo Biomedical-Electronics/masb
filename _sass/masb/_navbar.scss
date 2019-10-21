@@ -1,4 +1,5 @@
 header {
+  z-index: 9999;
   background-color: $base-primary-color;
   display: grid;
   grid-template-columns: 20% auto;
@@ -8,7 +9,7 @@ header {
   transition: top 350ms ease-in-out, background-color 350ms ease-in-out;
   width: 100%;
   &.transparent {
-    // background-color: $base-primary-color-transparent;
+    background-color: $base-primary-color-transparent;
   }
 
   a#logo {

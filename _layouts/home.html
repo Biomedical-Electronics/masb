@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+<div id="video-hero">
+  <video autoplay muted loop id="video-hero">
+    <source src="{{ '/assets/vid/cabecera-web.mp4' | relative_url }}" type="video/mp4"> 
+  </video>
+  <div class="content">
+    <h1>Aprendiendo a programar microcontroladores</h1>
+    <p>Nuestros estudiantes te presentan sus proyectos basados en microcontroladores para aplicaciones y sistemas biomédicos</p>
+    <a href="{{ '/portafolio' | relative_url }}" class="btn">¡Échales un ojo!</a>
+  </div>
+</div>
+
 
 <div class="home">
   {%- if page.title -%}

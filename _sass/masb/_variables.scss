@@ -29,7 +29,13 @@ $base-font-color-dark-emphasis: rgba(255,255,255,0.87);
 $base-font-color-dark-medium-emphasis: rgba(255,255,255,0.60);
 $base-font-color-dark-disabled: rgba(255,255,255,0.38);
 
+$base-font-color-dark-tinted: rgba(255,255,255,0.75);
+$base-font-color-light-tinted: rgba(0,0,0,0.75);
+
 $base-primary-color: #1E1E1E;
+$base-primary-color-overlay: rgba(30, 30, 30, 0.75);
 $base-primary-color-transparent: rgba(30, 30, 30, 0);
+
+$base-secondary-color: #7FCFC3;
 
 $base-bg-color-light: #fafbfc;

@@ -1,0 +1,30 @@
+#video-hero {
+    position: relative;
+    overflow: hidden;    
+    z-index: 1;
+    video {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        
+    }
+    .content {
+        max-width: 400px;
+        display: inline-block;
+        padding: 32px;
+        margin: 128px 0 32px 32px;
+        position: relative;
+    z-index: 1;
+        // background-color: $base-primary-color-overlay;
+        color: $base-font-color-dark-emphasis;
+        h1, p {
+            margin: 0;
+            padding: 0;
+        }
+        .btn {
+            margin-top: 16px;
+        }
+    }
+}
