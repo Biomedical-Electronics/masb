@@ -1,0 +1,26 @@
+html,
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $base-font-color-light-emphasis;
+  margin: 0;
+  padding: 0;
+  height: 300%;
+}
+
+html {
+    background-color: $base-primary-color;
+}
+body {
+    background-color: $base-bg-color-light;
+}
+
+*:focus {outline:none;}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
