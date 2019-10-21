@@ -1,20 +1,20 @@
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: top 350ms ease-in-out, background-color 350ms ease-in-out;
+  background-color: $base-primary-color;
   display: grid;
   grid-template-columns: 20% auto;
-  background-color: $base-primary-color;
   height: 60px;
+  position: fixed;
+  top: 0;
+  transition: top 350ms ease-in-out, background-color 350ms ease-in-out;
+  width: 100%;
   &.transparent {
     // background-color: $base-primary-color-transparent;
   }
 
   a#logo {
+    filter: opacity(0.38);
     padding-left: 16px;
     place-self: center left;
-    filter: opacity(0.38);
     transition: filter 200ms ease-in-out;
     &:hover {
       filter: opacity(1);
@@ -27,22 +27,25 @@ header {
     padding-right: 16px;
     place-self: center right;
     &.show-menu ul {
-      display: block;
+      max-height: 500px;
     }
     ul {
       background-color: $base-primary-color;
-      display: none;
+      display: block;
       left: 0;
       list-style: none;
       margin: 0;
+      max-height: 0;
       padding: 0;
       position: absolute;
       right: 0;
       top: 60px;
+      transition: max-height 300ms ease-in-out;
       @media (min-width: $md) {
-        top: 0;
-        position: relative;
         display: inline-block;
+        max-height: 0;
+        position: relative;
+        top: 0;
       }
       li {
         padding: 8px 16px;

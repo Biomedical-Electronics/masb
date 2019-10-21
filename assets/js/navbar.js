@@ -9,6 +9,8 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.querySelector("header").style.top = "0";
   } else if (currentScrollPos > 400) {
+    document.querySelector("nav button").className = "hamburger hamburger--squeeze";
+    nav.className = navClassName;
     document.querySelector("header").style.top = "-60px";
   }
   if (homePage){
@@ -30,4 +32,3 @@ function toggleMenu(me) {
     nav.className = (navClassName + " show-menu").trim();
   }
 }
-
