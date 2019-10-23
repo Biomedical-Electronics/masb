@@ -21,8 +21,8 @@
 <script type="application/ld+json">
 {"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","url":"/masb/","name":"MASB Microcontroladores para Aplicaciones y Sistemas Biomédicos","headline":"Inicio","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/masb/assets/css/main.css?1571862266873152408"><link type="application/atom+xml" rel="alternate" href="/masb/feed.xml" title="MASB | Microcontroladores para Aplicaciones y Sistemas Biomédicos" /></head>
-<body class="preload"><header class="transparent">
+<link rel="stylesheet" href="/masb/assets/css/main.css?1571869837581588053"><link type="application/atom+xml" rel="alternate" href="/masb/feed.xml" title="MASB | Microcontroladores para Aplicaciones y Sistemas Biomédicos" /></head>
+<body class="preload"><header class="transparent" id="top-bar">
   <a id="logo" href="/masb/"><img src="/masb/assets/imgs/logo.svg" alt="Logo de MASB"></a>
   <nav>
     <ul>
@@ -37,9 +37,25 @@
       </span>
     </button>  
   </nav>
-</header><main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <!-- <div class="home"><h1 class="page-heading">Inicio</h1>
+</header><div id="video-hero" class="container">
+  <video autoplay muted loop id="video-hero">
+    <source src="/masb/assets/vid/cabecera-web.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1>Aprendiendo a programar microcontroladores</h1>
+    <p>Nuestros estudiantes te presentan sus proyectos basados en microcontroladores para aplicaciones y sistemas
+      biomédicos</p>
+    <!-- <a href="/masb/portafolio" class="btn">¡Échales un ojo!</a> -->
+    <a href="javascript:void(0);" class="btn">¡Échales un ojo!</a>
+  </div>
+  <a href="javascript:void(0);" id="go-down" onclick="smoothScrollTo('main')">
+    <img src="/masb/assets/imgs/chevron-down.svg" alt="Ir a contenido principal">
+  </a>
+</div>
+
+<main aria-label="Content">
+
+  <div class="home container"><h1 class="page-heading">Inicio</h1>
 <h2 class="post-list-heading">Posts</h2>
     <ul class="post-list"><li><span class="post-meta">Oct 15, 2019</span>
         <h3>
@@ -49,9 +65,7 @@
         </h3></li></ul>
 
     <p class="rss-subscribe">subscribe <a href="/masb/feed.xml">via RSS</a></p></div>
- -->
-      </div>
-    </main>
+</main>
 
     <!--<footer class="site-footer h-card">
   <data class="u-url" href="/masb/"></data>
@@ -82,7 +96,10 @@
     <script>
       document.querySelector('body').classList.remove("preload");
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="/masb/assets/js/navbar.js"></script>
+    <script src="/masb/assets/js/scrollTo.js"></script>
   </body>
 
 </html>
