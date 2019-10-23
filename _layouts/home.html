@@ -1,15 +1,32 @@
 ---
 layout: default
 ---
+<div id="video-hero" class="container">
+  <video autoplay muted loop id="video-hero">
+    <source src="{{ '/assets/vid/cabecera-web.mp4' | relative_url }}" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1>Aprendiendo a programar microcontroladores</h1>
+    <p>Nuestros estudiantes te presentan sus proyectos basados en microcontroladores para aplicaciones y sistemas
+      biomédicos</p>
+    <!-- <a href="{{ '/portafolio' | relative_url }}" class="btn">¡Échales un ojo!</a> -->
+    <a href="javascript:void(0);" class="btn">¡Échales un ojo!</a>
+  </div>
+  <a href="javascript:void(0);" id="go-down" onclick="smoothScrollTo('main')">
+    <img src="{{ '/assets/imgs/chevron-down.svg' | relative_url }}" alt="Ir a contenido principal">
+  </a>
+</div>
 
-<div class="home">
-  {%- if page.title -%}
+<main aria-label="Content">
+
+  <div class="home container">
+    {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+    {%- endif -%}
 
-  {{ content }}
+    {{ content }}
 
-  {%- if site.posts.size > 0 -%}
+    {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -22,13 +39,14 @@ layout: default
           </a>
         </h3>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+        {{ post.excerpt }}
         {%- endif -%}
       </li>
       {%- endfor -%}
     </ul>
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+    {%- endif -%}
 
-</div>
+  </div>
+</main>

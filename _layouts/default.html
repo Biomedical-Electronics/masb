@@ -6,19 +6,17 @@
   <body class="preload">
 
     {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <!-- {{ content }} -->
-      </div>
-    </main>
+    {{ content }}
 
     <!-- {%- include footer.html -%} -->
 
     <script>
       document.querySelector('body').classList.remove("preload");
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="{{ '/assets/js/navbar.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/scrollTo.js' | relative_url }}"></script>
   </body>
 
 </html>

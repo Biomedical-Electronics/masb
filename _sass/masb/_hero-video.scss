@@ -1,0 +1,77 @@
+#video-hero {
+  background-color: $base-primary-color;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  min-height: 430px;
+  @media (min-width: $md) {
+    min-height: 330px;
+  }
+  @media (min-width: $md) {
+    min-height: 370px;
+  }
+  @media (min-width: $xl) {
+    min-height: 470px;
+  }
+  video {
+    background-color: $base-primary-color;
+    left: 50%;
+    margin-left: -50vw;
+    object-fit: cover;
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    height: 100%;
+
+  }
+  .content {
+    color: $base-font-color-dark-emphasis;
+    display: inline-block;
+    // margin-bottom: 128px;
+    // margin-top: 256px;
+    max-width: $sm;
+    // position: relative;
+    z-index: 1;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% + 30px));
+
+
+
+    h1,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 28px;
+      @media (min-width: $md) {
+        font-size: 48px;
+      }
+      @media (min-width: $xl) {
+        font-size: 64px;
+      }
+    }
+    p {
+      font-weight: 300;
+      @media (min-width: $md) {
+        font-weight: normal;
+      }
+      font-size: 24px;
+      max-width: 510px;
+    }
+    .btn {
+      margin: 16px auto;
+    }
+  }
+  a#go-down {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      margin: 8px;
+    }
+  }
+}
