@@ -1,4 +1,4 @@
-header {
+header#top-bar {
   z-index: 9999;
   background-color: $base-primary-color;
   display: grid;
@@ -6,7 +6,7 @@ header {
   height: 60px;
   position: fixed;
   top: 0;
-  transition: top 350ms ease-in-out, background-color 350ms ease-in-out;
+  transition: top 300ms ease-in-out, background-color 300ms ease-in-out;
   width: 100%;
   &.transparent {
     background-color: $base-primary-color-transparent;
@@ -29,9 +29,10 @@ header {
     place-self: center right;
     &.show-menu ul {
       max-height: 500px;
+      background-color: $base-primary-color;
     }
     ul {
-      background-color: $base-primary-color;
+      background-color: $base-primary-color-transparent;
       display: block;
       left: 0;
       list-style: none;
@@ -41,11 +42,13 @@ header {
       position: absolute;
       right: 0;
       top: 60px;
-      transition: max-height 300ms ease-in-out;
+      overflow: hidden;
+      transition: max-height 300ms ease-in-out, background-color 300ms ease-in-out;
       @media (min-width: $md) {
         display: inline-block;
         max-height: 0;
         position: relative;
+        overflow: visible;
         top: 0;
       }
       li {

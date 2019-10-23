@@ -1,0 +1,17 @@
+.container {
+    width: auto;
+    margin: 0 $content-margin-xs;
+    @media (min-width: $sm) {
+       width: $content-width-sm;
+       margin: 0 auto;
+    }
+    @media (min-width: $md) {
+       width: $content-width-md;
+    }
+    @media (min-width: $lg) {
+       width: $content-width-lg;
+    }
+    @media (min-width: $xl) {
+       width: $content-width-xl;
+    }
+}

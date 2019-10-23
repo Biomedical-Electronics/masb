@@ -8,7 +8,7 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.querySelector("header").style.top = "0";
-  } else if (currentScrollPos > 400) {
+  } else if (currentScrollPos > 400 && !nav.classList.contains("show-menu")) {
     document.querySelector("nav button").className = "hamburger hamburger--squeeze";
     nav.className = navClassName;
     document.querySelector("header").style.top = "-60px";
@@ -16,7 +16,7 @@ window.onscroll = function() {
   if (homePage){
     if (currentScrollPos > 100) {
       document.querySelector('header').classList.remove("transparent");
-    } else {
+    } else if (!nav.classList.contains("show-menu")) {
       document.querySelector('header').classList.add("transparent");
     }
   }
@@ -24,11 +24,16 @@ window.onscroll = function() {
 }
 
 function toggleMenu(me) {
+  var currentScrollPos = window.pageYOffset;
   if (me.classList.contains("is-active")) {
     me.className = "hamburger hamburger--squeeze";
     nav.className = navClassName;
+    if (homePage && (currentScrollPos < 100)){
+        document.querySelector('header').classList.add("transparent");
+    }
   } else {
     me.className += " is-active";
     nav.className = (navClassName + " show-menu").trim();
+    document.querySelector('header').classList.remove("transparent");
   }
 }
